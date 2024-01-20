@@ -3,7 +3,13 @@ import dependencies.core
 import dependencies.coreUi
 import dependencies.hilt
 import dependencies.ktx
+import dependencies.searchData
+import dependencies.searchDomain
+import dependencies.searchPresentation
 import dependencies.test
+import dependencies.weatherData
+import dependencies.weatherDomain
+import dependencies.weatherPresentation
 
 plugins {
     id("com.android.application")
@@ -77,6 +83,15 @@ dependencies {
 
     core()
     coreUi()
+
+    weatherData()
+    weatherDomain()
+    weatherPresentation()
+
+    searchData()
+    searchDomain()
+    searchPresentation()
+
     coil()
     coroutines()
     moshi()
