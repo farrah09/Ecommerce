@@ -1,7 +1,5 @@
 import dependencies.compose
-import dependencies.core
 import dependencies.hilt
-import dependencies.ktx
 import dependencies.test
 
 plugins {
@@ -19,4 +17,7 @@ dependencies {
     compose()
     hilt()
     test()
+
+    coroutines()
+    moshi()
 }

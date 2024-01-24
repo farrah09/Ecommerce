@@ -34,6 +34,29 @@ class GradlePlugins: Plugin<Project> {
                 sourceCompatibility = JavaVersion.VERSION_17
                 targetCompatibility = JavaVersion.VERSION_17
             }
+
+            buildFeatures {
+                compose = true
+            }
+            composeOptions {
+                kotlinCompilerExtensionVersion = "1.5.7"
+            }
+            packaging {
+                resources {
+                    excludes += "/META-INF/{AL2.0,LGPL2.1}"
+                    excludes += "META-INF/gradle/incremental.annotation.processors"
+                    excludes += "META-INF/DEPENDENCIES"
+                    excludes += "META-INF/LICENSE"
+                    excludes += "META-INF/LICENSE.txt"
+                    excludes += "META-INF/license.txt"
+                    excludes += "META-INF/NOTICE"
+                    excludes += "META-INF/NOTICE.txt"
+                    excludes += "META-INF/notice.txt"
+                    excludes += "META-INF/ASL2.0"
+                    excludes += "META-INF/*.kotlin_module"
+                }
+            }
+
         }
     }
 

@@ -3,6 +3,7 @@ import dependencies.core
 import dependencies.hilt
 import dependencies.test
 import dependencies.weatherDomain
+import dependencies.gson
 
 plugins {
     `android-library`
@@ -19,6 +20,7 @@ dependencies {
 
     core()
     weatherDomain()
+    gson()
 
     hilt()
     compose()

@@ -1,4 +1,4 @@
-package com.plcoding.calorytracker
+package com.fandroid.weatherapp
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

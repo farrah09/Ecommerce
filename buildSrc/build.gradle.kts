@@ -8,7 +8,7 @@ repositories{
 }
 
 dependencies{
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.21")
     implementation("com.android.tools.build:gradle:8.2.1")
 
     // Required to fix a missing dependency error

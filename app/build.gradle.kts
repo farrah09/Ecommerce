@@ -1,6 +1,7 @@
 import dependencies.compose
 import dependencies.core
 import dependencies.coreUi
+import dependencies.gson
 import dependencies.hilt
 import dependencies.ktx
 import dependencies.searchData
@@ -55,7 +56,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.7"
     }
     packaging {
         resources {
@@ -97,4 +98,5 @@ dependencies {
     moshi()
     retrofit()
     room()
+    gson()
 }

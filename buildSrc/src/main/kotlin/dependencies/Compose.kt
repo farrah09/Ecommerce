@@ -20,7 +20,7 @@ object Compose {
     private const val navigationVersion = "2.4.0-beta02"
     const val navigation = "androidx.navigation:navigation-compose:$navigationVersion"
 
-    private const val hiltNavigationComposeVersion = "1.0.0-beta01"
+    private const val hiltNavigationComposeVersion = "1.0.0"
     const val hiltNavigationCompose = "androidx.hilt:hilt-navigation-compose:$hiltNavigationComposeVersion"
 
 
@@ -34,5 +34,7 @@ fun DependencyHandler.compose(){
     implementation(Compose.ui)
     implementation(Compose.uiToolingPreview)
     implementation(Compose.activityCompose)
+    implementation(Compose.hiltNavigationCompose)
+    implementation(Compose.navigation)
     implementation(platform(Compose.bom))
 }
