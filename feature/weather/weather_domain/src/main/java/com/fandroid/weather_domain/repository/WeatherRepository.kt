@@ -15,5 +15,5 @@ interface WeatherRepository {
 
     suspend fun deleteWeather(food: Weather)
 
-    fun getWeatherForDate(localDate: LocalDate): Flow<List<Weather>>
+    fun getCurrentWeather(latitude: Double, longitude: Double): Flow<Weather>
 }

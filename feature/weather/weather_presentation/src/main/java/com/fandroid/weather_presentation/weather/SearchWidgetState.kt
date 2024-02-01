@@ -1,4 +1,4 @@
-package com.fandroid.weather_presentation
+package com.fandroid.weather_presentation.weather
 
 enum class SearchWidgetState {
     OPENED,

@@ -19,5 +19,5 @@ interface WeatherDao {
             FROM weather
         """
     )
-    fun getWeatherForDate(): Flow<List<WeatherEntity>>
+    fun getCurrentWeather(): Flow<List<WeatherEntity>>
 }

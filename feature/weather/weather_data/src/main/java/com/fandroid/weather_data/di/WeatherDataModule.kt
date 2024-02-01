@@ -1,14 +1,19 @@
 package com.fandroid.weather_data.di
 
 import android.app.Application
+import android.content.Context
 import androidx.room.Room
 import com.fandroid.weather_data.local.WeatherDatabase
 import com.fandroid.weather_data.remote.OpeWeatherApi
+import com.fandroid.weather_data.repository.LocationRepositoryImpl
 import com.fandroid.weather_data.repository.WeatherRepositoryImpl
+import com.fandroid.weather_data.location.LocationService
+import com.fandroid.weather_domain.repository.LocationRepository
 import com.fandroid.weather_domain.repository.WeatherRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -65,4 +70,20 @@ object WeatherDataModule {
             api = api
         )
     }
+
+    @Provides
+    @Singleton
+    fun provideLocationRepository(
+        locationService: LocationService
+    ): LocationRepository {
+        return LocationRepositoryImpl(
+           locationService
+        )
+    }
+
+   /* @Provides
+    @Singleton
+    fun provideContext(@ApplicationContext appContext: Context): Context {
+        return appContext
+    }*/
 }

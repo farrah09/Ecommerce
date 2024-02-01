@@ -1,3 +1,4 @@
+import dependencies.Lottie.lottie
 import dependencies.compose
 import dependencies.hilt
 import dependencies.test
@@ -20,4 +21,5 @@ dependencies {
 
     coroutines()
     moshi()
+    lottie()
 }

@@ -1,3 +1,4 @@
+import Google.google
 import dependencies.compose
 import dependencies.core
 import dependencies.hilt
@@ -21,6 +22,7 @@ dependencies {
     core()
     weatherDomain()
     gson()
+    google()
 
     hilt()
     compose()

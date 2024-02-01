@@ -1,5 +1,6 @@
 package com.fandroid.weather_data.repository
 
+import android.location.Location
 import com.fandroid.weather_data.local.WeatherDao
 import com.fandroid.weather_data.mapper.toWeather
 import com.fandroid.weather_data.remote.OpeWeatherApi
@@ -39,7 +40,9 @@ class WeatherRepositoryImpl(
         TODO("Not yet implemented")
     }
 
-    override fun getWeatherForDate(localDate: LocalDate): Flow<List<Weather>> {
+    override fun getCurrentWeather(latitude: Double, longitude: Double): Flow<Weather> {
         TODO("Not yet implemented")
     }
+
+
 }

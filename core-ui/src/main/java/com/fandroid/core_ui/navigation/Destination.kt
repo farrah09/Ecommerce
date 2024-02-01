@@ -1,5 +1,10 @@
 package com.fandroid.core_ui.navigation
 
+import com.fandroid.core_ui.navigation.Route.ERROR
+import com.fandroid.core_ui.navigation.Route.SEARCH
+import com.fandroid.core_ui.navigation.Route.WELCOME
+import com.fandroid.core_ui.navigation.Route.Weather
+
 sealed class Destination(protected val route: String, vararg params: String) {
     val fullRoute: String = if (params.isEmpty()) route else {
         val builder = StringBuilder(route)
@@ -11,25 +16,13 @@ sealed class Destination(protected val route: String, vararg params: String) {
         operator fun invoke(): String = route
     }
 
-    data object HomeNavigation : NoArgumentsDestination("Home")
+    data object WelcomeScreen : NoArgumentsDestination(WELCOME)
 
-    data object CartScreen : NoArgumentsDestination("cart")
+    data object WeatherScreen : NoArgumentsDestination(Weather)
 
-    data object ItemsScreen : NoArgumentsDestination("items")
+    data object SearchScreen : NoArgumentsDestination(SEARCH)
 
-    data object TransactionsScreen : NoArgumentsDestination("transactions")
-
-    data object CustomersScreen : NoArgumentsDestination("customers")
-
-    data object ReportsScreen : NoArgumentsDestination("reports")
-
-    data object DashboardScreen : NoArgumentsDestination("dashboard")
-
-    data object AccountScreen : NoArgumentsDestination("account")
-
-    data object SuspendedCartsScreen : NoArgumentsDestination("suspendedCarts")
-
-    data object UpsertItemScreen: NoArgumentsDestination("upsertItem")
+    data object ErrorScreen : NoArgumentsDestination(ERROR)
 
 }
 

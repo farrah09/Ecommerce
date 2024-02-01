@@ -1,3 +1,5 @@
+import Google.google
+import dependencies.Lottie.lottie
 import dependencies.compose
 import dependencies.core
 import dependencies.coreUi
@@ -99,4 +101,6 @@ dependencies {
     retrofit()
     room()
     gson()
+    google()
+    lottie()
 }

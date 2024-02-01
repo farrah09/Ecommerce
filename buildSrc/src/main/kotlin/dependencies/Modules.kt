@@ -17,10 +17,12 @@ object Modules {
     const val searchData = ":feature:search:search_data"
     const val searchDomain = ":feature:search:search_domain"
     const val searchPresentation = ":feature:search:search_presentation"
+
 }
 
 fun DependencyHandler.core(){
-    implementation(project(Modules.core))}
+    implementation(project(Modules.core))
+}
 
 fun DependencyHandler.coreUi(){
     implementation(project(Modules.coreUi))
@@ -35,7 +37,7 @@ fun DependencyHandler.weatherDomain(){
 }
 
 fun DependencyHandler.weatherPresentation(){
-    implementation(project(Modules.searchPresentation))
+    implementation(project(Modules.weatherPresentation))
 }
 
 fun DependencyHandler.searchData(){
