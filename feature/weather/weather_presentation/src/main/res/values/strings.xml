@@ -17,5 +17,7 @@
     <string name="close_icon">Close Icon</string>
     <string name="retry">Retry</string>
     <string name="error_something_went_wrong">Something Went Wrong</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="next">Next</string>
 
 </resources>

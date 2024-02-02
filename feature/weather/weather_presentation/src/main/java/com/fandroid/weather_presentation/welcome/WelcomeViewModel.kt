@@ -19,6 +19,7 @@ class WelcomeViewModel @Inject constructor(
     private val appNavigator: AppNavigator,
     private val context: Context
 ) : ViewModel() {
+
     fun isLocationPermissionGranted(): Boolean {
 
         val fineLocationGranted = ContextCompat.checkSelfPermission(
@@ -34,7 +35,6 @@ class WelcomeViewModel @Inject constructor(
         return fineLocationGranted && coarseLocationGranted
 
     }
-
 
     fun onPermissionGranted() {
         viewModelScope.launch {
