@@ -24,15 +24,6 @@
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core-ui" />
-            <option value="$PROJECT_DIR$/feature" />
-            <option value="$PROJECT_DIR$/feature/search" />
-            <option value="$PROJECT_DIR$/feature/search/search_data" />
-            <option value="$PROJECT_DIR$/feature/search/search_domain" />
-            <option value="$PROJECT_DIR$/feature/search/search_presentation" />
-            <option value="$PROJECT_DIR$/feature/weather" />
-            <option value="$PROJECT_DIR$/feature/weather/weather_data" />
-            <option value="$PROJECT_DIR$/feature/weather/weather_domain" />
-            <option value="$PROJECT_DIR$/feature/weather/weather_presentation" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

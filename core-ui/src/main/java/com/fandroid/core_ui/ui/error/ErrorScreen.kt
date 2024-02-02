@@ -25,7 +25,6 @@ import com.fandroid.core_ui.ui.Animation
 @Composable
 fun ErrorScreen(
     errorMessage: String,
-    navigateToWeatherScreen: () -> Unit,
     ) {
     Box(
         modifier = Modifier
@@ -38,7 +37,7 @@ fun ErrorScreen(
             animation = R.raw.animation_error,
         )
 
-        Button(onClick = { navigateToWeatherScreen }) {
+        Button(onClick = { }) {
             Icon(
                 imageVector = Icons.Filled.Refresh,
                 contentDescription = "Retry",

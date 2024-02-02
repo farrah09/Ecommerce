@@ -1,5 +1,5 @@
 object ProjectConfig {
-    const val applicationId = "com.fandroid.weatherapp"
+    const val applicationId = "com.fandroid.ecommerce"
     const val compileSdk = 34
     const val minSdk = 24
     const val targetSdk = 34

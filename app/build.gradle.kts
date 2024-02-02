@@ -6,13 +6,7 @@ import dependencies.coreUi
 import dependencies.gson
 import dependencies.hilt
 import dependencies.ktx
-import dependencies.searchData
-import dependencies.searchDomain
-import dependencies.searchPresentation
 import dependencies.test
-import dependencies.weatherData
-import dependencies.weatherDomain
-import dependencies.weatherPresentation
 
 plugins {
     id("com.android.application")
@@ -22,7 +16,7 @@ plugins {
 }
 
 android {
-    namespace = "com.fandroid.weatherapp"
+    namespace = "com.fandroid.ecommerce"
     compileSdk = 34
 
     defaultConfig {
@@ -86,14 +80,6 @@ dependencies {
 
     core()
     coreUi()
-
-    weatherData()
-    weatherDomain()
-    weatherPresentation()
-
-    searchData()
-    searchDomain()
-    searchPresentation()
 
     coil()
     coroutines()
